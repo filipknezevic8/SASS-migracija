@@ -12,6 +12,13 @@ $radius-btn: 8px;
 $shadow-card: 0 2px 10px rgba(0, 0, 0, 0.1);
 $shadow-btn-hover: 0px 5px 15px rgba(255, 126, 95, 0.4);
 
+/* Responsive Mixin */
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+        @content;
+    }
+}
+
 /* General Styles */
 body {
     font-family: $font-main;
@@ -115,12 +122,22 @@ h2 {
         display: flex;
         justify-content: space-between;
 
+        @include responsive(992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
         .card {
             background: $color-white;
             padding: 20px;
             width: 27%;
             border-radius: $radius-card;
             box-shadow: $shadow-card;
+
+            @include responsive(992px) {
+                width: 80%;
+            }
         }
     }
 }
@@ -134,14 +151,14 @@ h2 {
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
-    .card-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
+// @media screen and (max-width: 992px) {
+//     .card-list {
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 50px;
 
-        .card {
-            width: 80%;
-        }
-    }
-}
+//         .card {
+//             width: 80%;
+//         }
+//     }
+// }
