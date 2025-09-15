@@ -1,3 +1,4 @@
+/* Promenljive */
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -47,7 +48,7 @@ h2 {
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border: none;
   border-radius: 8px;
@@ -92,7 +93,7 @@ h2 {
   justify-content: space-between;
 }
 .center-section .card-list .card {
-  background: white;
+  background: #fff;
   padding: 20px;
   width: 27%;
   border-radius: 10px;
@@ -104,7 +105,7 @@ h2 {
   text-align: center;
   padding: 20px;
   background: #222;
-  color: white;
+  color: #fff;
 }
 
 /* Responsive */
