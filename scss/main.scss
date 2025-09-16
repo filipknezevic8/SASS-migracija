@@ -1,0 +1,55 @@
+@use 'variables' as *;
+@use 'primary-btn';
+@use 'header';
+@use 'content';
+
+/* General Styles */
+body {
+    font-family: $font-main;
+    color: $color-text;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 32px;
+}
+
+/* Features & Plans Sections */
+.features {
+    background: $color-light-gray;
+}
+.center-section {
+    text-align: center;
+    padding: 50px 10px;
+
+    .card-list {
+        display: flex;
+        justify-content: space-between;
+
+        @include responsive(992px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .card {
+            background: $color-white;
+            padding: 20px;
+            width: 27%;
+            border-radius: $radius-card;
+            box-shadow: $shadow-card;
+
+            @include responsive(992px) {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: $color-dark;
+    color: $color-white;
+}

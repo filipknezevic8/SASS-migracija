@@ -1,0 +1,20 @@
+/* Promenljive */
+$font-main: Arial, sans-serif;
+$color-text: #333;
+$color-primary: #ff7e5f;
+$color-primary-light: #feb47b;
+$color-light-gray: #f3f3f3;
+$color-dark: #222;
+$color-white: #fff;
+
+$radius-card: 10px;
+$radius-btn: 8px;
+$shadow-card: 0 2px 10px rgba(0, 0, 0, 0.1);
+$shadow-btn-hover: 0px 5px 15px rgba(255, 126, 95, 0.4);
+
+/* Responsive Mixin */
+@mixin responsive($max-screen-size) {
+    @media (max-width: $max-screen-size) {
+        @content;
+    }
+}

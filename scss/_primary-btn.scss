@@ -1,0 +1,21 @@
+@use 'variables' as *;
+
+/* Primary Button */
+.primary-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    cursor: pointer;
+    
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-white;
+
+    text-decoration: none;
+    border: none;
+    border-radius: $radius-btn;
+    background: linear-gradient(45deg, $color-primary, $color-primary-light);
+
+    &:hover {
+        box-shadow: $shadow-btn-hover;
+    }
+}
